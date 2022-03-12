@@ -1,0 +1,785 @@
+/*
+  Theme Name: Name - Multipurpose HTML Template
+  Author: mdsalim400@gmail.com
+  Support: admin@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. Header
+3. Slider
+4. Features
+6. Software features
+7. Testimonial
+8. Subscribe
+9. Counter
+10. Footer
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+a,
+button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+  outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  color: #1c3354;
+  margin-top: 0px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: normal;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+/* h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+} */
+
+p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #7b8491;
+  padding: 0;
+}
+a {
+  font-family: "Poppins", sans-serif;
+}
+label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.fix {
+  overflow: hidden;
+}
+/* Header */
+header .logo a img {
+  width: 100px;
+  height: auto;
+}
+.transparent-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9888;
+  width: 100%;
+}
+.stickyheader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #f7f7fb;
+}
+.menu-area {
+  z-index: 988;
+  position: relative;
+  margin-top: 10px;
+}
+.menu-area nav ul {
+  display: flex;
+}
+.menu-area nav ul li a {
+  font-size: 14px;
+  color: #2c303e;
+  text-transform: uppercase;
+  display: block;
+  margin-right: 30px;
+  font-weight: 400;
+  font-weight: 500;
+  color: #2c303e;
+  text-transform: uppercase;
+  padding: 20px 0;
+  display: block;
+  font-size: 14px;
+}
+
+.menu-area nav ul li a:hover {
+  color: #00cb6d;
+}
+/* submenu */
+.menu-area nav ul li {
+  position: relative;
+  transition: all ease-in-out 0.5s;
+}
+.menu-area nav ul li:hover > ul.submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+.menu-area nav ul li ul.submenu {
+  position: absolute;
+  top: 100%;
+  left: -30px;
+  flex-direction: column;
+  min-width: 230px;
+  background-color: #fff;
+  padding: 25px 20px;
+  border-top: 5px solid #00cb6d;
+  border-top-right-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+  transform-origin: top;
+  z-index: 2;
+  box-shadow: 1px 1px 1px 4px #233d6315;
+}
+.menu-area nav ul li ul.submenu li {
+  padding: 0;
+  margin-bottom: 15px;
+}
+.menu-area nav ul li ul.submenu li a {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0px;
+}
+/* mobile menu */
+.mobile-menu {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+}
+.mobile-menu button {
+  background: none;
+  border: none;
+}
+.mobile-menu button i {
+  font-size: 20px;
+}
+/* Hero Slider */
+.slider-wrapper {
+  min-height: 900px;
+}
+.slider-text h1 span {
+  display: block;
+  color: #00cb6d;
+}
+
+.shape {
+  position: absolute;
+}
+.shape-1 {
+  left: 10%;
+  top: 25%;
+  animation: moveshape1 10s linear infinite alternate;
+}
+.shape-2 {
+  left: 4%;
+  bottom: 45%;
+  animation: moveshape2 15s linear infinite;
+}
+.shape-3 {
+  left: 10%;
+  bottom: 15%;
+  animation: moveshape3 15s linear infinite alternate;
+}
+.shape-4 {
+  bottom: 15%;
+  left: 40%;
+  animation: moveshape4 30s linear infinite alternate;
+}
+.shape-5 {
+  right: 10%;
+  top: 20%;
+  animation: moveshape5 10s linear infinite alternate;
+}
+.shape-6 {
+  right: 10%;
+  bottom: 10%;
+  animation: moveshape6 10s linear infinite alternate;
+}
+/* move shape */
+@keyframes moveshape1 {
+  0% {
+    left: 10%;
+    top: 25%;
+  }
+  25% {
+    left: 13%;
+    top: 30%;
+  }
+  50% {
+    left: 30%;
+    top: 25%;
+    transform: rotate(20deg);
+  }
+  75% {
+    left: 25%;
+    top: 15%;
+    transform: rotate(30deg);
+  }
+  100% {
+    left: 5%;
+    top: 25%;
+    transform: rotate(360deg);
+  }
+}
+@keyframes moveshape2 {
+  0% {
+    left: 4%;
+    bottom: 45%;
+  }
+  25% {
+    left: 10%;
+    bottom: 25%;
+  }
+  50% {
+    left: 15%;
+    bottom: 27%;
+    transform: rotate(20deg);
+  }
+  75% {
+    left: 20%;
+    bottom: 35%;
+    transform: rotate(30deg);
+  }
+  100% {
+    left: 5%;
+    bottom: 40%;
+    transform: rotate(360deg);
+  }
+}
+@keyframes moveshape3 {
+  0% {
+    left: 10%;
+    bottom: 10%;
+  }
+
+  100% {
+    left: 20%;
+    bottom: 25%;
+  }
+}
+@keyframes moveshape4 {
+  0% {
+    bottom: 20%;
+    left: 40%;
+    opacity: 0.5;
+  }
+
+  100% {
+    left: 45%;
+    bottom: 10%;
+    opacity: 0.7;
+  }
+}
+@keyframes moveshape5 {
+  0% {
+    right: 5%;
+    top: 10%;
+  }
+
+  25% {
+    right: 10%;
+    top: 25%;
+  }
+  50% {
+    right: 15%;
+    top: 30%;
+  }
+  75% {
+    right: 20%;
+    top: 20%;
+  }
+  100% {
+    right: 15%;
+    top: 7%;
+  }
+}
+@keyframes moveshape6 {
+  0% {
+    right: 10%;
+    bottom: 10%;
+  }
+
+  100% {
+    right: 15%;
+    bottom: 5%;
+  }
+}
+/* Feature */
+.feature-shape {
+  position: absolute;
+  top: 8%;
+  left: 45%;
+  animation: featureShape 10s linear infinite forwards;
+}
+.feature-item {
+  padding: 40px 35px;
+  box-shadow: 4px 3px 3px 4px #f7f7fb;
+}
+.feature-item .btn-area a {
+  font-size: 13px;
+  color: #2c303e;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  display: inline-block;
+}
+.feature-item .btn-area a {
+  position: relative;
+}
+.feature-item .btn-area a:hover {
+  color: #00cb6d;
+}
+.feature-item .btn-area a::before {
+  position: absolute;
+  top: 3px;
+  left: 110%;
+  content: "";
+  height: 14px;
+  width: 10px;
+  background-color: #00cb6d;
+}
+.feature-text .feature-icon img {
+  width: 80px;
+  height: auto;
+}
+.feature-bottom-area .img-area {
+  margin-left: -142px;
+}
+.feature-bottom-area .img-area img {
+  width: 100%;
+}
+@keyframes featureShape {
+  0% {
+    top: 8%;
+    left: 45%;
+  }
+  100% {
+    top: 3%;
+    left: 55%;
+  }
+}
+/* Software features */
+.soft-icon-box {
+  padding: 15px;
+}
+.software-features-bottom .img-area {
+  margin-right: -70px;
+}
+
+/* pricing table */
+.xisen-border-bottom {
+  border-bottom: 1px solid #eaecee;
+}
+.pr-item {
+  border: 1px solid #eaecee;
+  padding: 0px 30px;
+  cursor: pointer;
+}
+.pr-item:hover {
+  box-shadow: 4px 4px 4px 4px #f6f6fb;
+}
+.pr-details ul li {
+  font-size: 15px;
+  color: #7b8491;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.pr-btn {
+  margin: 10px 0px;
+}
+.pr-btn a:hover {
+  color: #00cb6d;
+}
+/* Testimonial */
+.testimonial-slider {
+  cursor: pointer;
+  position: relative;
+}
+.testimonial-desc p i {
+  margin-left: 20px;
+}
+
+.testimonial-author span {
+  padding-left: 15px;
+  font-size: 14px;
+  color: #7b8491;
+}
+
+.testimonial-nav-container button {
+ padding: 2px 10px;
+ border:none;
+}
+.testimonial-nav-container button.tns-nav-active {
+  background-color: #00cb6d !important;
+}
+.testimonial-left-img img {
+  margin-left: -50px;
+}
+
+/* subscribe */
+.subscribe {
+  position: relative;
+}
+.subscribe-shape {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  animation: moveSubscribeShape 20s ease-in infinite alternate;
+}
+@keyframes moveSubscribeShape {
+  0% {
+    top: 40%;
+    left: 30%;
+  }
+  25%{
+    top: 30%;
+    left: 40%;
+  }
+  50% {
+    top: 40%;
+    left: 50%;
+  }
+  100% {
+    top: 30%;
+    left: 40%;
+  }
+}
+.xisen-input-group {
+  overflow: hidden;
+}
+.xisen-input-group input {
+  font-size: 12px;
+  color: #121212;
+  border: 1px solid #eaecee;
+  height: 80px;
+  width: 60%;
+  padding: 0px 20px;
+  margin-right: 18px;
+}
+.xisen-input-group button {
+  font-size: 13px;
+  color: #fff;
+  background-color: #00c867;
+  height: 80px;
+  padding: 0px 75px;
+  border: none;
+  text-transform: uppercase;
+}
+.xisen-input-group input::placeholder {
+  color: #7b8491;
+  text-transform: uppercase;
+}
+/* footer */
+footer {
+
+  background-position: center center;
+}
+.footer-heading {
+  padding-bottom: 40px;
+}
+.footer-heading h3 {
+  text-transform: capitalize;
+}
+.footer-nav ul li {
+  margin-bottom: 12px;
+}
+.footer-nav ul li a {
+  font-size: 15px;
+  color: #8d96a2;
+  text-transform: capitalize;
+}
+.social-items ul li a {
+  color: #b8bcbf;
+  font-size: 14px;
+  margin-right: 20px;
+}
+.social-items ul li a:hover {
+  color: #00cb6d;
+}
+/* footer bottom */
+
+.footer-bottom-nav nav ul li a {
+  display: block;
+  color: #8d96a2;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-right: 40px;
+}
+.footer-bottom-nav a:hover {
+  color: #00cb6d;
+}
+
+/* Line */
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #dddddd;
+}
+/* preloader */
+#loading {
+  background-color: rgba(255, 255, 255, 1);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  margin-top: 0px;
+  top: 0px;
+}
+#loading-center {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#loading-center-absolute {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100px;
+  width: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+.object {
+  width: 25px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0);
+  margin-right: auto;
+  margin-left: auto;
+  border: 4px solid rgba(239, 74, 74, 1);
+  left: 37px;
+  top: 37px;
+  position: absolute;
+}
+
+#first_object {
+  -webkit-animation: first_object 1s infinite;
+  animation: first_object 1s infinite;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+#second_object {
+  -webkit-animation: second_object 1s infinite;
+  animation: second_object 1s infinite;
+}
+#third_object {
+  -webkit-animation: third_object 1s infinite;
+  animation: third_object 1s infinite;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+#forth_object {
+  -webkit-animation: forth_object 1s infinite;
+  animation: forth_object 1s infinite;
+}
+
+@-webkit-keyframes first_object {
+  0% {
+    -ms-transform: translate(1, 1) scale(1, 1);
+    -webkit-transform: translate(1, 1) scale(1, 1);
+    transform: translate(1, 1) scale(1, 1);
+  }
+  50% {
+    -ms-transform: translate(150%, 150%) scale(2, 2);
+    -webkit-transform: translate(150%, 150%) scale(2, 2);
+    transform: translate(150%, 150%) scale(2, 2);
+  }
+
+  100% {
+    -ms-transform: translate(1, 1) scale(1, 1);
+    -webkit-transform: translate(1, 1) scale(1, 1);
+    transform: translate(1, 1) scale(1, 1);
+  }
+}
+@keyframes first_object {
+  0% {
+    -ms-transform: translate(1, 1) scale(1, 1);
+    -webkit-transform: translate(1, 1) scale(1, 1);
+    transform: translate(1, 1) scale(1, 1);
+  }
+  50% {
+    -ms-transform: translate(150%, 150%) scale(2, 2);
+    -webkit-transform: translate(150%, 150%) scale(2, 2);
+    transform: translate(150%, 150%) scale(2, 2);
+  }
+
+  100% {
+    -ms-transform: translate(1, 1) scale(1, 1);
+    -webkit-transform: translate(1, 1) scale(1, 1);
+    transform: translate(1, 1) scale(1, 1);
+  }
+}
+
+@-webkit-keyframes second_object {
+  0% {
+    -ms-transform: translate(1, 1) scale(1, 1);
+    -webkit-transform: translate(1, 1) scale(1, 1);
+    transform: translate(1, 1) scale(1, 1);
+  }
+  50% {
+    -ms-transform: translate(-150%, 150%) scale(2, 2);
+    -webkit-transform: translate(-150%, 150%) scale(2, 2);
+    transform: translate(-150%, 150%) scale(2, 2);
+  }
+  100% {
+    -ms-transform: translate(1, 1) scale(1, 1);
+    -webkit-transform: translate(1, 1) scale(1, 1);
+    transform: translate(1, 1) scale(1, 1);
+  }
+}
+@keyframes second_object {
+  0% {
+    -ms-transform: translate(1, 1) scale(1, 1);
+    -webkit-transform: translate(1, 1) scale(1, 1);
+    transform: translate(1, 1) scale(1, 1);
+  }
+  50% {
+    -ms-transform: translate(-150%, 150%) scale(2, 2);
+    -webkit-transform: translate(-150%, 150%) scale(2, 2);
+    transform: translate(-150%, 150%) scale(2, 2);
+  }
+  100% {
+    -ms-transform: translate(1, 1) scale(1, 1);
+    -webkit-transform: translate(1, 1) scale(1, 1);
+    transform: translate(1, 1) scale(1, 1);
+  }
+}
+
+@-webkit-keyframes third_object {
+  0% {
+    -ms-transform: translate(1, 1) scale(1, 1);
+    -webkit-transform: translate(1, 1) scale(1, 1);
+    transform: translate(1, 1) scale(1, 1);
+  }
+  50% {
+    -ms-transform: translate(-150%, -150%) scale(2, 2);
+    -webkit-transform: translate(-150%, -150%) scale(2, 2);
+    transform: translate(-150%, -150%) scale(2, 2);
+  }
+  100% {
+    -ms-transform: translate(1, 1) scale(1, 1);
+    -webkit-transform: translate(1, 1) scale(1, 1);
+    transform: translate(1, 1) scale(1, 1);
+  }
+}
+@keyframes third_object {
+  0% {
+    -ms-transform: translate(1, 1) scale(1, 1);
+    -webkit-transform: translate(1, 1) scale(1, 1);
+    transform: translate(1, 1) scale(1, 1);
+  }
+  50% {
+    -ms-transform: translate(-150%, -150%) scale(2, 2);
+    -webkit-transform: translate(-150%, -150%) scale(2, 2);
+    transform: translate(-150%, -150%) scale(2, 2);
+  }
+  100% {
+    -ms-transform: translate(1, 1) scale(1, 1);
+    -webkit-transform: translate(1, 1) scale(1, 1);
+    transform: translate(1, 1) scale(1, 1);
+  }
+}
+
+@-webkit-keyframes forth_object {
+  0% {
+    -ms-transform: translate(1, 1) scale(1, 1);
+    -webkit-transform: translate(1, 1) scale(1, 1);
+    transform: translate(1, 1) scale(1, 1);
+  }
+  50% {
+    -ms-transform: translate(150%, -150%) scale(2, 2);
+    -webkit-transform: translate(150%, -150%) scale(2, 2);
+    transform: translate(150%, -150%) scale(2, 2);
+  }
+  100% {
+    -ms-transform: translate(1, 1) scale(1, 1);
+    -webkit-transform: translate(1, 1) scale(1, 1);
+    transform: translate(1, 1) scale(1, 1);
+  }
+}
+@keyframes forth_object {
+  0% {
+    -ms-transform: translate(1, 1) scale(1, 1);
+    -webkit-transform: translate(1, 1) scale(1, 1);
+    transform: translate(1, 1) scale(1, 1);
+  }
+  50% {
+    -ms-transform: translate(150%, -150%) scale(2, 2);
+    -webkit-transform: translate(150%, -150%) scale(2, 2);
+    transform: translate(150%, -150%) scale(2, 2);
+  }
+  100% {
+    -ms-transform: translate(1, 1) scale(1, 1);
+    -webkit-transform: translate(1, 1) scale(1, 1);
+    transform: translate(1, 1) scale(1, 1);
+  }
+}

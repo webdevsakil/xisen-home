@@ -1,0 +1,185 @@
+/* For Navbar :800px. */
+@media all and (max-width: 993px) {
+    .logo {
+        margin-top: 40px;
+    }
+    .header-btn {
+        margin-top: 20px;
+    }
+    .menu-area {
+        position: absolute;
+        height: 100vh;
+        background: #fff;
+        width: 280px;
+        padding: 40px;
+        z-index: 988;
+        transform: translateY(-50px);
+        transition: all ease-in 0.4s;
+        transform-origin: top;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .toggleMenu {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-area ul {
+        flex-direction: column;
+    }
+
+    .menu-area nav ul li {
+        padding-top: 0px;
+        padding-bottom: 15px;
+    }
+    .menu-area nav ul li ul.submenu {
+        background-color: #121212;
+    }
+    .menu-area nav ul li ul.submenu li a {
+        color: #fff;
+    }
+    .menu-area nav ul li a {
+        padding: 0px 0;
+    }
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .pr-item .xisen-btn {
+        padding: 20px 0px;
+    }
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .feature-item {
+        padding: 10px 5px;
+    }
+    .soft-icon-box {
+        padding: 0px;
+    }
+    .software-features-bottom .img-area {
+        margin-right: 0px;
+        margin-top: 40px;
+    }
+    .testimonial-left-img img {
+        margin-left: 0px;
+    }
+    .testimonials-wrapper {
+        margin-top: 30px;
+    }
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .slider-wrapper {
+        min-height: 1000px;
+    }
+    .slider-text {
+        margin-top: 100px;
+    }
+    .slider-img {
+        margin-top: 40px;
+    }
+    .features.pt-150.pb-150 {
+        padding-top: 80px;
+    }
+    .feature-top-wrapper.mt-90 {
+        margin-top: 40px;
+        text-align: center;
+    }
+    .software-features-bottom .img-area {
+        margin-top: 20px;
+    }
+    .testimonial-left-img img {
+        margin-left: 0px;
+    }
+    .testimonials-wrapper {
+        margin-top: 30px;
+    }
+    .xisen-input-group input {
+        width: 70%;
+        height: 60px;
+    }
+    .xisen-input-group button {
+        height: 58px;
+        padding: 0px 20px;
+    }
+}
+/* Small Mobile :480px. */
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+    .slider-text {
+        text-align: center;
+        margin-top: 100px;
+    }
+    header{
+        padding: 0px 50px;
+    }
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .slider-img {
+        margin-top: 20px;
+    }
+    .features {
+        margin-top: -100px;
+    }
+    .feature-top-wrapper {
+        margin-top: -30px;
+    }
+    .feature-item {
+        text-align: center;
+    }
+    .feature-bottom-area {
+        margin-top: -40px;
+    }
+    .feature-text {
+        text-align: center;
+    }
+    .software-features {
+        margin-top: -90px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .software-features-bottom .img-area {
+        margin-top: 40px;
+    }
+    .software-features-bottom .img-area img {
+        width: 100%;
+    }
+    .subscribe.mb-150 {
+        margin-top: -70px;
+    }
+    .subscribe form {
+        margin-top: -50px;
+    }
+    .xisen-input-group input {
+        width: 100%;
+        height: 50px;
+    }
+    .xisen-input-group {
+        text-align: center;
+    }
+    .xisen-input-group button {
+        height: 50px;
+        padding: 0px 20px;
+        margin-top: 20px;
+    }
+    footer {
+        margin-top: -100px;
+    }
+    .footer-bottom-nav nav ul li a {
+        margin-right: 15px;
+    }
+    .feature-bottom-area .img-area {
+        margin-left: 0px;
+    }
+    .software-features-bottom .img-area {
+        margin-right: 0px;
+    }
+    .testimonial-left-img img {
+        margin-left: 0px;
+    }
+}

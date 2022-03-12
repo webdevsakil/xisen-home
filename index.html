@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Bootstrap & SCSS Starter Pack</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/vendor/aos/aos.min.css">
+    <link rel="stylesheet" href="assets/vendor/tinyslider/tinyslider.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- preloader -->
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="object" id="first_object"></div>
+                <div class="object" id="second_object"></div>
+                <div class="object" id="third_object"></div>
+                <div class="object" id="forth_object"></div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Header Start -->
+    <header class="transparent-header ">
+        <div class="container position-relative">
+            <!-- mobile menu -->
+            <div class="mobile-menu d-lg-none">
+                <button type="button"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-xl-2 col-lg-2 ">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="assets/img/header/logo-2.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-7  d-flex justify-content-end">
+                    <div class="menu-area ">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Home</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Home version 1</a></li>
+                                        <li><a href="#">Home version 2</a></li>
+                                        <li><a href="#">feature</a></li>
+                                        <li><a href="#">portfolio</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </li>
+                                </li>
+                                <li><a href="#">pages</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">pages</a></li>
+                                        <li><a href="#">feature</a></li>
+                                        <li><a href="#">portfolio</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">feature</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3   d-none text-end d-lg-block">
+                    <div class="header-btn">
+                        <a href="#" class="xisen-btn xisen-border-btn">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <main>
+        <!-- hero Slider -->
+        <section class="slider-wrapper fix overlay gray-overlay position-relative white-bg d-flex align-items-center ">
+            <div class="shape-slider ">
+                <img src="assets/img/shapes/shape1.png" class="shape shape-1 animation-1" alt="">
+                <img src="assets/img/shapes/shape2.png" class="shape shape-2" alt="">
+                <img src="assets/img/shapes/shape-6.png" class="shape shape-3" alt="">
+                <img src="assets/img/shapes/shape-3.png" class="shape shape-4" alt="">
+                <img src="assets/img/shapes/shape-4.png" class="shape shape-5" alt="">
+                <img src="assets/img/shapes/shape-5.png" class="shape shape-6" alt="">
+            </div>
+            <div class="container ">
+                <div class="hero-slider ">
+                    <div class="slider-item">
+                        <div class="row align-items-center">
+                            <div class="col-xl-5 col-lg-6 col-md-6">
+                                <div class="slider-text">
+                                    <h1 data-aos="slide-up" data-aos-duration="2000"><span>Advanced</span>
+                                        Future Software
+                                        Made Simple</h1>
+                                    <div class="mt-45 mb-45" data-aos="slide-up" data-aos-duration="2000">
+                                        <p>Herb fill fowl fourth they're were whales don it first green years
+                                            seasons
+                                            seed
+                                            behold
+                                            fruitful let gathering good</p>
+                                    </div>
+                                    <div class="btn-area " data-aos="slide-up" data-aos-duration="2400">
+                                        <a href="#" class="xisen-btn xisen-fill-btn d-inline-block">free trail</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 offset-xl-1 col-lg-6 col-md-6 offset-lg-0">
+                                <div class="slider-img" data-aos="slide-left" data-aos-duration="2000">
+                                    <img src="assets/img/hero/slider-image.png" alt="slider" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- work process -->
+        <section class="features pt-150 pb-150 position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="text-center">
+                            <h2>How it works</h2>
+                            <p>Him have deep brought life darkness firmament unto move</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-shape">
+                    <img src="assets/img/features/shape-s-1.png" alt="shape">
+                </div>
+                <!-- work card -->
+
+                <div class="feature-top-wrapper mt-90">
+                    <div class="row ">
+                        <div class="col-xl-4 col-lg-4 col-md-4">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <img src="assets/img/features/icon.png" alt="feature">
+                                </div>
+                                <div class="feature-title">
+                                    <h3>Martket Analysis</h3>
+                                </div>
+                                <div class="feature-desc">
+
+                                    <p>Place isn't form together male night light days create.d firman</p>
+
+                                </div>
+                                <div class="btn-area mt-40">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4">
+                            <div class="feature-item ">
+                                <div class="feature-icon">
+                                    <img src="assets/img/features/icon2.png" alt="feature">
+                                </div>
+                                <div class="feature-title">
+                                    <h3>Market Analysis</h3>
+                                </div>
+                                <div class="feature-desc">
+                                    <p>
+                                    <p>Place isn't form together male night light days create.d firman</p>
+                                    </p>
+                                </div>
+                                <div class="btn-area mt-40">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4">
+                            <div class="feature-item ">
+                                <div class="feature-icon">
+                                    <img src="assets/img/features/icon3.png" alt="feature">
+                                </div>
+                                <div class="feature-title">
+                                    <h3>Martket Analysis</h3>
+                                </div>
+                                <div class="feature-desc">
+
+                                    <p>Place isn't form together male night light days create.d firman</p>
+
+                                </div>
+                                <div class="btn-area mt-40">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+       
+            <div class="row pt-130 feature-bottom-area ">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="img-area" data-aos="slide-right" data-aos-duration="2000">
+                        <img src="assets/img/features/social-bg.png">
+                    </div>
+                </div>
+                <div class=" col-xl-5 offset-xl-1 col-lg-6">
+                    <div class="feature-text">
+                        <div class="feature-icon">
+                            <img src="assets/img/features/access-icon.png" alt="brain">
+                        </div>
+                        <div class="feature-text-heading mb-40">
+                            <h2>Easy To<br>
+                                Access All Platform</h2>
+                        </div>
+                        <div class="feature-text-desc mb-40">
+                            <p>Make fly forth also won't. Firmament seas whales drys season for replenish
+                                without
+                                had Gathered days fill you'll whose
+                                air whose firmament rule heaven can may on rule hath all of unto beginni ad
+                                Light.
+                                Were blessed plant</p>
+                        </div>
+                        <div class="btn-area" data-aos="slide-up" data-aos-duration="1500">
+                            <a href="#" class="xisen-btn xisen-fill-btn d-inline-block">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- software features -->
+        <section class="software-features fix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="text-center">
+                            <h2>Software Feature</h2>
+                            <p>Gathered was to yielding god heaven lights gitter about void thing</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- featurse -->
+                <div class="row mt-10">
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                        <div class="soft-icon-box text-center">
+                            <div class="feature-icon mb-30">
+                                <img src="assets/img/features/sf1.png" alt="brain">
+                            </div>
+                            <div class="mb-15">
+                                <h3>Cloud Compatibility</h3>
+                            </div>
+                            <div>
+                                <p>
+                                    Man fruit moving fourt moving multiply so years rule is not It after you also do
+                                    seed grass that so which grass
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                        <div class="soft-icon-box text-center">
+                            <div class="feature-icon mb-30">
+                                <img src="assets/img/features/sf2.png" alt="brain">
+                            </div>
+                            <div class="mb-15">
+                                <h3>Cloud Compatibility</h3>
+                            </div>
+                            <div>
+                                <p>
+                                    Man fruit moving fourt moving multiply so years rule is not It after you also do
+                                    seed grass that so which grass
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                        <div class="soft-icon-box text-center">
+                            <div class="feature-icon mb-30">
+                                <img src="assets/img/features/sf3.png" alt="brain">
+                            </div>
+                            <div class="mb-15">
+                                <h3>Cloud Compatibility</h3>
+                            </div>
+                            <div>
+                                <p>
+                                    Man fruit moving fourt moving multiply so years rule is not It after you also do
+                                    seed grass that so which grass
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                </div>
+                <!-- software features bottom -->
+            <div class="container">
+                <div class="row pt-100 software-features-bottom align-items-center ">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="feature-text">
+                            <div class="feature-icon mb-10">
+                                <img src="assets/img/features/access-icon.png" alt="brain">
+                            </div>
+                            <div class="feature-text-heading mb-40">
+                                <h2>Effortlessly manage<br>
+                                    all your information</h2>
+                            </div>
+                            <div class="feature-text-desc mb-40">
+                                <p>Make fly forth also won't. Firmament seas whales drys season for replenish without
+                                    had Gathered days fill you'll whose
+                                    air whose firmament rule heaven can may on rule hath all of unto beginni ad light
+                                    Were blessed plant</p>
+                            </div>
+                            <div class="btn-area" data-aos="slide-up" data-aos-duration="1500">
+                                <a href="#" class="xisen-btn xisen-fill-btn d-inline-block">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="img-area" data-aos="slide-left" data-aos-duration="2000">
+                            <img src="assets/img/features/right-img.png" class="img-fluid" alt="features">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- pricing table -->
+        <section class="pricing-table mt-120 mb-100">
+            <div class="container">
+                <div class="row mb-80">
+                    <div class="col-xl-12">
+                        <div class="text-center">
+                            <h2>Choose Your Plan</h2>
+                            <p>Third grass wherein cattle dry there open multiply saying good</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- pricing table -->
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="pr-item text-center mb-20">
+                            <div class="pr-heading xisen-border-bottom ">
+                                <div class="icon pt-25">
+                                    <img src="assets/img/pricing-table/price-icon.png" alt="">
+                                </div>
+                                <h4 class="mt-10 mb-20">Standard</h4>
+                            </div>
+                            <div class="pr-details xisen-border-bottom pt-30">
+                                <ul>
+                                    <li>
+                                        <h4 class="d-inline-block">$20</h4>/month
+                                    </li>
+                                    <li>15gb clod storage</li>
+                                    <li>unlimited bandwidth</li>
+                                    <li>unlimited account</li>
+                                    <li>unlimited storage</li>
+                                    <li>15gb storage</li>
+                                    <li>sale after service</li>
+                                    <li>3 host domain service</li>
+                                    <li>24/7 support</li>
+                                </ul>
+                            </div>
+                            <div class="pr-btn">
+                                <a href="#" class="xisen-btn">purchase now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="pr-item text-center mb-20">
+                            <div class="pr-heading xisen-border-bottom ">
+                                <div class="icon pt-25">
+                                    <img src="assets/img/pricing-table/price-icon.png" alt="">
+                                </div>
+                                <h4 class="mt-10 mb-20">Business</h4>
+                            </div>
+                            <div class="pr-details xisen-border-bottom pt-30">
+                                <ul>
+                                    <li>
+                                        <h4 class="d-inline-block">$20</h4>/month
+                                    </li>
+                                    <li>15gb clod storage</li>
+                                    <li>unlimited bandwidth</li>
+                                    <li>unlimited account</li>
+                                    <li>unlimited storage</li>
+                                    <li>15gb storage</li>
+                                    <li>sale after service</li>
+                                    <li>3 host domain service</li>
+                                    <li>24/7 support</li>
+                                </ul>
+                            </div>
+                            <div class="pr-btn">
+                                <a href="#" class="xisen-btn">purchase now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="pr-item text-center mb-20">
+                            <div class="pr-heading xisen-border-bottom  ">
+                                <div class="icon pt-25">
+                                    <img src="assets/img/pricing-table/price-icon.png" alt="">
+                                </div>
+                                <h4 class="mt-10 mb-20">Premium</h4>
+                            </div>
+                            <div class="pr-details xisen-border-bottom pt-30">
+                                <ul>
+                                    <li>
+                                        <h4 class="d-inline-block">$20</h4>/month
+                                    </li>
+                                    <li>15gb clod storage</li>
+                                    <li>unlimited bandwidth</li>
+                                    <li>unlimited account</li>
+                                    <li>unlimited storage</li>
+                                    <li>15gb storage</li>
+                                    <li>sale after service</li>
+                                    <li>3 host domain service</li>
+                                    <li>24/7 support</li>
+                                </ul>
+                            </div>
+                            <div class="pr-btn">
+                                <a href="#" class="xisen-btn">purchase now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="pr-item text-center mb-20">
+                            <div class="pr-heading xisen-border-bottom ">
+                                <div class="icon pt-25">
+                                    <img src="assets/img/pricing-table/price-icon.png" alt="">
+                                </div>
+                                <h4 class="mt-10 mb-20">Ultimate</h4>
+                            </div>
+                            <div class="pr-details xisen-border-bottom pt-30">
+                                <ul>
+                                    <li>
+                                        <h4 class="d-inline-block">$20</h4>/month
+                                    </li>
+                                    <li>15gb clod storage</li>
+                                    <li>unlimited bandwidth</li>
+                                    <li>unlimited account</li>
+                                    <li>unlimited storage</li>
+                                    <li>15gb storage</li>
+                                    <li>sale after service</li>
+                                    <li>3 host domain service</li>
+                                    <li>24/7 support</li>
+                                </ul>
+                            </div>
+                            <div class="pr-btn">
+                                <a href="#" class="xisen-btn">purchase now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonail -->
+        <section>
+            <div class="container mb-120">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="testimonial-left-img" data-aos="slide-right" data-aos-duration="2000">
+                            <img src="assets/img/testimonial/test.png" class="img-fluid" alt="testimonail">
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-6 offset-xl-1 d-flex align-items-center">
+                        <div class="testimonials-wrapper">
+                            <div class="testimonial-heading mb-25">
+                                <h2>What our<br>
+                                    core clients saying?</h2>
+                            </div>
+                            <div class="testimonial-slider">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-desc">
+                                        <p>Bearing one Seas his give creepeth hath on green set in one grass yielding
+                                            beast she'd deep man creature a life female
+                                            let fruit have unto yielding. <i class="fa-solid fa-quote-right"></i></p>
+                                    </div>
+                                    <div class="testimonial-author mt-20">
+                                        <h3 class="f-400 d-inline-block mr-10">Karlo Hasels ,</h3>
+                                        <span>Project Manager</span>
+                                    </div>
+                                </div>
+                                <div class="testimonial-item">
+                                    <div class="testimonial-desc">
+                                        <p>Bearing one Seas his give creepeth hath on green set in one grass yielding
+                                            beast she'd deep man creature a life female
+                                            let fruit have unto yielding. <i class="fa-solid fa-quote-right"></i></p>
+                                    </div>
+                                    <div class="testimonial-author mt-20">
+                                        <h3 class="f-400 d-inline-block mr-10">Karlo Hasels ,</h3>
+                                        <span>Project Manager</span>
+                                    </div>
+                                </div>
+                                <div class="testimonial-item">
+                                    <div class="testimonial-desc">
+                                        <p>Bearing one Seas his give creepeth hath on green set in one grass yielding
+                                            beast she'd deep man creature a life female
+                                            let fruit have unto yielding. <i class="fa-solid fa-quote-right"></i></p>
+                                    </div>
+                                    <div class="testimonial-author mt-20">
+                                        <h3 class="f-400 d-inline-block mr-10">Karlo Hasels ,</h3>
+                                        <span>Project Manager</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- testimonail nav -->
+                            <div class="testimonial-nav-container">
+                                <button type="button"></button>
+                                <button type="button"></button>
+                                <button type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- logo clouds -->
+        <div class="logo-clouds mb-110">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 ">
+                        <!-- logo slider -->
+                        <ul class="logo-slider">
+                            <li><a href="#"><img src="assets/img/clints/logo1.png" alt="logo"></a></li>
+                            <li><a href="#"><img src="assets/img/clints/logo2.png" alt="logo"></a></li>
+                            <li><a href="#"><img src="assets/img/clints/logo3.png" alt="logo"></a></li>
+                            <li><a href="#"><img src="assets/img/clints/logo4.png" alt="logo"></a></li>
+                            <li><a href="#"><img src="assets/img/clints/logo5.png" alt="logo"></a></li>
+                            <li><a href="#"><img src="assets/img/clints/logo1.png" alt="logo"></a></li>
+                            <li><a href="#"><img src="assets/img/clints/logo2.png" alt="logo"></a></li>
+                            <li><a href="#"><img src="assets/img/clints/logo3.png" alt="logo"></a></li>
+                            <li><a href="#"><img src="assets/img/clints/logo4.png" alt="logo"></a></li>
+                            <li><a href="#"><img src="assets/img/clints/logo5.png" alt="logo"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- subscribe -->
+        <section class="subscribe mb-150">
+            <!-- shape -->
+            <div class="subscribe-shape">
+                <img src="assets/img/shapes/shape-4.png" alt="">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 offset-xl-2 col-lg-10  offset-lg-1 col-sm-12">
+                        <div class="subscribe-title text-start text-lg-center mb-90">
+                            <h2>Experience the most simple way<br>
+                                to manage business</h2>
+                        </div>
+                        <form action="#">
+                            <div class="xisen-input-group">
+                                <input type="email" placeholder="enter your email">
+                                <button>free trail</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="gray-overlay">
+        <div class="main-footer pt-115 pb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="row">
+                            <div class="col-xl-7 col-lg-7 col-md-6 ">
+
+                                <div class="footer-heading">
+                                    <a href="#"><img src="assets/img/header/logo.png" alt="logo"></a>
+                                </div>
+
+                                <div class="text-widgets mt-5">
+                                    <p>Winged moving moveth created for a shall and divide the their days male midst
+                                        shall
+                                        hath
+                                        doesn't won't for. Midst life.
+                                        Over and great night. Green upon years rule ying.</p>
+                                </div>
+                                <div class="social-items mt-45">
+                                    <ul class="d-flex">
+                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-4 offset-md-2 offset-lg-0">
+                                <div class="footer-heading">
+                                    <h3>about us</h3>
+                                </div>
+                                <div class="footer-nav">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#">Managed Website</a></li>
+                                            <li><a href="#">Manage Reputation</a></li>
+                                            <li><a href="#">Power Tools</a></li>
+                                            <li><a href="#">Marketing Service</a></li>
+                                            <li><a href="#">Customer Service</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 ">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="footer-heading">
+                                    <h3>quick links</h3>
+                                </div>
+                                <div class="footer-nav">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#">Managed Website</a></li>
+                                            <li><a href="#">Manage Reputation</a></li>
+                                            <li><a href="#">Power Tools</a></li>
+                                            <li><a href="#">Marketing Service</a></li>
+                                            <li><a href="#">Customer Service</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+
+                                <div class="footer-heading">
+                                    <h3>my account</h3>
+                                </div>
+                                <div class="footer-nav">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#">Managed Website</a></li>
+                                            <li><a href="#">Manage Reputation</a></li>
+                                            <li><a href="#">Power Tools</a></li>
+                                            <li><a href="#">Marketing Service</a></li>
+                                            <li><a href="#">Customer Service</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="footer-heading">
+                                    <h3>resources</h3>
+                                </div>
+                                <div class="footer-nav">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#">Managed Website</a></li>
+                                            <li><a href="#">Manage Reputation</a></li>
+                                            <li><a href="#">Power Tools</a></li>
+                                            <li><a href="#">Marketing Service</a></li>
+                                            <li><a href="#">Customer Service</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- line -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <!-- footer bottom -->
+        <div class="footer-bottom pt-30 pb-20 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-sm-center text-md-start">
+                        <p>Copyright &copy; 2019 Xisen. All rights reserved</p>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="footer-bottom-nav">
+                            <nav>
+                                <ul class="d-flex justify-content-md-end justify-content-sm-center">
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Tips & Tricks</a></li>
+                                    <li><a href="#">Services</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Script -->
+
+
+    <script src="assets/vendor/tinyslider/tinyslider.js"></script>
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/jquery-2.0.2.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+</body>
+
+</html>
